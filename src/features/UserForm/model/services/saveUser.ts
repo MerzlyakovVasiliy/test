@@ -14,6 +14,7 @@ export const saveUser = createAsyncThunk<
 >(
     'form/saveUser',
     async ({userData, id}, {rejectWithValue}) => {
+        console.log(userData)
         try {
             const url = id
                 ? `https://reqres.in/api/users/${id}`

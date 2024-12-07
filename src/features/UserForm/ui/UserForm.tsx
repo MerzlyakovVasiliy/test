@@ -208,6 +208,8 @@ export const UserForm = () => {
                 <LoadingButton
                     className={cls.button}
                     sx={{
+                        display: 'flex',
+                        margin: '0 auto',
                         backgroundColor: 'black',
                         textTransform: 'none',
                     }}
