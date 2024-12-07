@@ -1,0 +1,26 @@
+.formWrapper {
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    padding: 30px 45px;
+    height: 100%;
+    max-width: 745px;
+}
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3D3A3A;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .formWrapper {
+        padding: 17px;
+    }
+
+    .header {
+        font-size: 26px;
+        font-weight: bold;
+        color: #3D3A3A;
+    }
+}

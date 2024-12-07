@@ -1,0 +1,88 @@
+.UserForm {
+    width: 100%;
+}
+
+.formRow {
+    display: flex;
+    gap: 20px;
+}
+
+.input {
+    height: 42px;
+}
+
+.textField {
+    height: 100px;
+}
+
+.button {
+    height: 42px;
+    display: block;
+    margin: 0 auto;
+}
+
+.form_row .form_group {
+    flex: 1;
+}
+
+.subtitleForm {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.centeredMessage {
+    position: fixed; /* или absolute, если хотите, чтобы сообщение было внутри формы */
+    top: 50%; /* Расположение по вертикали */
+    left: 50%; /* Расположение по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование по обеим осям */
+    padding: 20px;
+    background-color: #4caf50; /* Зеленый для успешного */
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    z-index: 9999; /* Для того, чтобы сообщение было поверх других элементов */
+}
+.errorMessage {
+    background-color: #f44336; /* Красный для ошибки */
+}
+
+.button {
+    display: flex;
+    margin: 0 auto;
+    font-size: 16px;
+    width: 182px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 26px;
+        font-weight: bold;
+        color: #3D3A3A;
+    }
+
+    .formRow {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .input {
+        height: 42px;
+    }
+
+    .button {
+        width: 100%;
+        flex: 1;
+    }
+}

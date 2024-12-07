@@ -1,0 +1,25 @@
+.FieldFormWrapper {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.label {
+    font-size: 22px;
+    color: #3D3A3A;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.label::after {
+    content: "*";
+    color: #f00;
+    margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+    .label {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.BlockFormWrapper {
+    width: 100%;
+}
+
+.subtitleForm {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .subtitleForm {
+        font-size: 18px;
+    }
+}

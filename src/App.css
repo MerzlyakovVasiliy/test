@@ -1,0 +1,25 @@
+.App {
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.custom-datepicker .MuiOutlinedInput-root {
+  height: 42px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 15px 0;
+  }
+
+  .custom-datepicker .MuiOutlinedInput-root {
+    height: 42px;
+  }
+}
