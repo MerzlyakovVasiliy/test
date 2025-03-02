@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+# Тестовая задача A SWISS GROUP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание
 
-Currently, two official plugins are available:
+Данное React-приложение позволяет добавлять, редактировать и управлять пользователями, используя API и локальное хранилище. Интерфейс включает форму добавления/редактирования пользователя и таблицу со списком пользователей с возможностью сортировки и поиска.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Функциональность
 
-## Expanding the ESLint configuration
+- Форма добавления/редактирования пользователя:
+  - Выбор пользователя из списка (с бесконечной прокруткой и фильтрацией);
+  - Выбор пола и соответствующей роли;
+  - Выбор даты рождения (с ограничением по возрасту);
+  - Валидация полей формы (при `onBlur` и перед отправкой);
+  - Автоматический фокус на первом ошибочном поле при валидации;
+  - Отправка данных на сервер.
+- Таблица пользователей:
+  - Отображение списка пользователей с возможностью сортировки;
+  - Поиск по фамилии;
+  - Возможность редактирования и удаления пользователя (с подтверждением).
+- Общие условия:
+  - Анимации интерактивных элементов;
+  - Индикаторы загрузки при взаимодействии с API;
+  - Модальные окна для подтверждений и уведомлений о статусе операций;
+  - Данные сохраняются в `localStorage`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Технологии
 
-- Configure the top-level `parserOptions` property like this:
+- React (с хуками);
+- React Router;
+- Redux Toolkit (для управления состоянием);
+- Axios (для работы с API);
+- TypeScript;
+- Tailwind CSS (для стилизации);
+- React Hook Form + Yup (для валидации форм);
+- React Query (для кеширования данных API);
+- Framer Motion (для анимаций).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Установка и запуск
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Клонируйте репозиторий:
+   ```sh
+   git clone https://github.com/your-username/user-management-app.git
+   cd user-management-app
+   ```
+2. Установите зависимости:
+   ```sh
+   npm install
+   ```
+3. Запустите приложение:
+   ```sh
+   npm run dev
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Деплой
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Приложение опубликовано по адресу: [Ссылка на приложение](https://merzlyakovvasiliy.github.io/test/)
+
+## API
+
+Используемый API описан в Swagger: [Swagger UI](https://reqres.in/api-docs/)
+
+## Макет Figma
+
+Используемый макет в Figma: [Figma](https://www.figma.com/design/rAa3XzzbPr2YgBVXfqF8cm/Test?node-id=0-1&p=f&t=qYLk5aKwq1tEJLZ2-0)
+
